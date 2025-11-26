@@ -77,6 +77,37 @@ Again, each heuristic contributes to a normalized **risk score** plus an
 explanation of which rules fired.
 
 ---
+Example use cases
+
+Quick, explainable phishing demos in security discussions or study groups.
+
+Practicing threat modeling: “What makes this URL/email suspicious?”
+
+A starting point for integrating heuristic checks into a CI pipeline
+(e.g., fail a build if high-risk URLs are committed).
+
+---
+
+Limitations & Scope
+
+PhishSense is intentionally small and educational:
+
+It is not a production-ready anti-phishing engine.
+
+Rules are simplified and incomplete by design.
+
+Results are heuristic estimates and must be combined with:
+
+Organizational policies,
+
+Additional technical controls,
+
+Manual review by a human.
+
+That said, the project is designed so that new rules, signals, and checks
+can be added incrementally as part of an ongoing learning process.
+
+---
 
 ## Output formats
 
@@ -101,3 +132,4 @@ Example JSON structure:
   ],
   "note": "Heuristic, educational tool. Manual review is required."
 }
+
