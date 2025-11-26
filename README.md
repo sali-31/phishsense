@@ -100,9 +100,7 @@ Results are heuristic estimates and must be combined with:
 
 Organizational policies,
 
-Additional technical controls,
-
-Manual review by a human.
+Additional technical controls.
 
 That said, the project is designed so that new rules, signals, and checks
 can be added incrementally as part of an ongoing learning process.
@@ -132,4 +130,5 @@ Example JSON structure:
   ],
   "note": "Heuristic, educational tool. Manual review is required."
 }
+
 
