@@ -153,8 +153,9 @@ Example JSON structure:
       "reason": "TLD '.xyz' is frequently associated with abuse (in this educational example)."
     }
   ],
-  "note": "Heuristic, educational tool. Manual review is required."
+  "note": "Heuristic, educational tool."
 }
+
 
 
 
