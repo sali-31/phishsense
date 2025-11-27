@@ -1,3 +1,12 @@
+## Motivation
+   
+   Data theft often begins with phishing emails that trick users into 
+   revealing credentials. My interest in protecting business data 
+   (see: SecureClientVault) extends to preventing the initial compromise 
+   vector—phishing attacks.
+
+---
+
 # PhishSense – Phishing URL & Email Risk Scorer
 
 PhishSense is a small, self-contained security tool that assigns a risk score
@@ -88,6 +97,22 @@ A starting point for integrating heuristic checks into a CI pipeline
 
 ---
 
+## Real Phishing Examples Analyzed
+   
+   Example 1: "Urgent - Verify Your PayPal Account"
+   URL: http://192.168.100.200/paypa1-verify/update-account
+   Email: "Dear Customer, Click here immediately..."
+   
+   **Detected signals:**
+   - ❌ IP-based host (not domain)
+   - ❌ Typosquatting (paypa1 ≠ paypal)
+   - ❌ Urgency language + generic greeting
+   - ❌ Credential request (verify account)
+   
+   **Risk Score: 94/100 - CRITICAL**
+
+---
+
 Limitations & Scope
 
 PhishSense is intentionally small and educational:
@@ -130,5 +155,6 @@ Example JSON structure:
   ],
   "note": "Heuristic, educational tool. Manual review is required."
 }
+
 
 
